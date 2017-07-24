@@ -5,8 +5,6 @@ Created on Mon Jul  3 16:23:47 2017
 
 @author: helio
 """
-execfile('/home/helio/Rotinas/Python/AVISO/playxinho.py') #rotina rocheda
-
 import time
 import datetime
 import sys
@@ -29,8 +27,6 @@ while True:
     dif=datetime.datetime.now()-st
     hr=dif.seconds/(mn*60+sg)
     if hr==1:
-        for i in np.arange(0,4):
-            playxinho()
         break
     else:
         sec=dif.seconds%60
